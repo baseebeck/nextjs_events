@@ -1,0 +1,146 @@
+header 
+    height: 300px
+    padding: 20px
+    background: linear-gradient(305deg, #dbfff3, transparent)
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    width: 100%
+    .headerContainer
+        width: 100%
+        max-width: 1280px
+        margin: 0 auto
+    .title
+        width: 50%
+        font-size: 40px
+        text-transform: uppercase
+    .topNav
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        align-items: center
+        ul
+            display: flex
+            list-style-type: none
+            gap: 15px
+            li
+                font-weight: 600
+                font-size: 16px
+
+footer
+    background-color: #333
+    color: #fff
+    padding: 12px
+    text-align: center
+    p
+        margin: 0
+        font-weight: 100
+
+main
+    width: 100%
+    max-width: 1280px
+    margin: auto
+    padding: 50px 30px
+    min-height: 550px
+
+.home_body
+    display: flex
+    flex-direction: column
+    gap: 50px
+    .image
+        // width: 100%
+    .card
+        display: flex
+        gap: 30px
+        justify-content: center
+        align-items: center
+        &:nth-child(even)
+            direction: rtl
+        .content
+            width: 50%
+
+
+.events_page
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: center
+    gap: 20px
+    .card
+        position: relative
+        h2
+            position: absolute
+            width: 100%
+            top: 50%
+            text-align: center
+            justify-content: center
+            font-size: 38px
+            color: white
+            text-transform: uppercase
+            text-shadow: 1px 1px 20px black
+
+.cat_events
+    width: 100%
+    .content
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+        gap: 30px
+        justify-content: flex-start
+        width: 100%
+        .card
+            display: flex
+            flex-direction: column
+            align-items: center
+            width: 30%
+            min-width: 250px
+            p
+                margin-top: 0
+
+.event_single_page
+    .register
+        display: flex
+        flex-direction: column
+        gap: 12px
+        margin-top: 32px
+        label
+            font-weight: bold
+        input[type="email"]
+            margin-right: 12px
+            margin-bottom: 12px
+            min-width: 200px
+            padding: 6px
+            border-radius: 5px
+            border: 1px solid #ccc
+        button
+            border-radius: 5px
+            border: 1px solid #000
+            background: #dcfff3
+            font-weight: bold
+            text-transform: uppercase
+            padding: 6px 12px
+            &:hover
+                cursor: pointer
+                background: black
+                border: 1px solid #dcfff3
+                color: #dcfff3
+
+        
+
+
+@media screen and (max-width: 768px)
+    .card
+        flex-direction: column
+        text-align: center
+        .image
+            display: flex
+            justify-content: center
+            width: 100%
+    .event_single_page
+        img
+            width: 100%
+
+@media screen and (max-width: 420px)
+    .headerContainer
+        .title
+            width: 100%
