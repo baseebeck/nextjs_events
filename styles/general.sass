@@ -48,7 +48,13 @@ main
     flex-direction: column
     gap: 50px
     .image
-        // width: 100%
+        text-align: center
+        img
+            // obejct-fit: contain
+            width: 70% !important
+            position: relative !important
+            height: unset !important
+            max-height: 450px
     .card
         display: flex
         gap: 30px
@@ -136,6 +142,17 @@ main
             display: flex
             justify-content: center
             width: 100%
+
+            img
+                // obejct-fit: contain
+                width: 80% !important
+                position: relative !important
+                height: unset !important
+                // max-height: 450px !important
+        .content
+            width: 80% !important
+
+
     .event_single_page
         img
             width: 100%
@@ -144,3 +161,10 @@ main
     .headerContainer
         .title
             width: 100%
+    .home_body
+        .card
+            .image
+                img
+                    width: 100% !important
+            .content
+                width: 80% !important
