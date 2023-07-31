@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 
 const SingleEvent = ({ data }) => {
   const inputEmail = useRef();
-  console.log(inputEmail);
+  // console.log(inputEmail);
   const router = useRouter();
   const [message, setMessage] = useState("");
 
