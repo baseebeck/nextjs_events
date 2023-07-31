@@ -26,7 +26,7 @@ const Header = () => {
             </ul>
           </nav>
         </div>
-        <p className="title">Lorem ipsum dolor sit amet</p>
+        <p className="title">Events Next.js App</p>
       </div>
     </header>
   );
