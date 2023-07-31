@@ -1,7 +1,7 @@
 header 
     height: 300px
     padding: 20px
-    background: linear-gradient(305deg, #dbfff3, transparent)
+    background: linear-gradient(305deg, #a994fe, transparent)
     display: flex
     flex-direction: column
     justify-content: space-between
@@ -11,6 +11,7 @@ header
         max-width: 1280px
         margin: 0 auto
     .title
+        color: #151220
         width: 50%
         font-size: 40px
         text-transform: uppercase
@@ -26,9 +27,14 @@ header
             li
                 font-weight: 600
                 font-size: 16px
+                a
+                    color: #151220
+                    padding-bottom: 4px
+                a:hover 
+                    border-bottom: 2px solid #151220
 
 footer
-    background-color: #333
+    background-color: #151220
     color: #fff
     padding: 12px
     text-align: center
@@ -43,20 +49,29 @@ main
     padding: 50px 30px
     min-height: 550px
 
+
+.button
+    padding: 12px 24px
+    background: #151220
+    color: #fff 
+    border-radius: 5px
+    margin-top: auto
+
+
 .home_body
     display: flex
     flex-direction: column
-    gap: 50px
+    gap: 0px
     .image
         text-align: center
         img
-            // obejct-fit: contain
             width: 70% !important
             position: relative !important
             height: unset !important
             max-height: 450px
     .card
         display: flex
+        padding: 40px 30px
         gap: 30px
         justify-content: center
         align-items: center
@@ -64,6 +79,9 @@ main
             direction: rtl
         .content
             width: 50%
+        &:hover
+            background: rgba(169, 148, 254, 0.3)
+            transition: .8s ease
 
 
 .events_page
@@ -74,16 +92,25 @@ main
     gap: 20px
     .card
         position: relative
+        &:hover 
+            transform: scale(1.03)
+            transition: .75s ease
+        img
+            width: 100% !important
+            position: relative !important
+            height: unset !important
+            filter: brightness(.5)
         h2
             position: absolute
             width: 100%
-            top: 50%
+            top: 20%
             text-align: center
             justify-content: center
             font-size: 38px
             color: white
             text-transform: uppercase
-            text-shadow: 1px 1px 20px black
+            text-shadow: 0px 4px 12px black
+            padding: 0 20px
 
 .cat_events
     width: 100%
@@ -91,17 +118,28 @@ main
         display: flex
         flex-direction: row
         flex-wrap: wrap
-        gap: 30px
-        justify-content: flex-start
+        gap: 0
+        justify-content: center
         width: 100%
         .card
             display: flex
             flex-direction: column
             align-items: center
-            width: 30%
-            min-width: 250px
+            padding: 40px
+            text-align: center
+            width: 33%
+            min-width: 300px
+            &:hover
+                background: rgba(169, 148, 254, 0.3)
+                transition: .8s ease
+                cursor: pointer
+                
             p
                 margin-top: 0
+            img
+                width: 100% !important
+                position: relative !important
+                height: unset !important
 
 .event_single_page
     .register
@@ -135,6 +173,11 @@ main
 
 
 @media screen and (max-width: 768px)
+    main
+        padding: 50px 20px
+    header
+        .title
+            width: 75%
     .card
         flex-direction: column
         text-align: center
@@ -144,14 +187,11 @@ main
             width: 100%
 
             img
-                // obejct-fit: contain
                 width: 80% !important
                 position: relative !important
                 height: unset !important
-                // max-height: 450px !important
         .content
             width: 80% !important
-
 
     .event_single_page
         img
@@ -168,3 +208,22 @@ main
                     width: 100% !important
             .content
                 width: 80% !important
+
+    .events_page
+        .card
+            h2
+                font-size: 30px
+                top: 15%
+                text-align: center
+    
+
+@media screen and (max-width: 325px)
+    .headerContainer
+        .title
+            font-size: 32px
+    .events_page
+        .card
+            h2
+                font-size: 30px
+                top: 0%
+                text-align: center

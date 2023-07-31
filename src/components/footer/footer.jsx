@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <footer className="">
-      <p>copyright 2023</p>
+      <p>Ben Seebeck {new Date().getFullYear()}</p>
     </footer>
   );
 };

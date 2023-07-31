@@ -13,9 +13,10 @@ const CatEvent = ({ data, pageName }) => {
             key={ev.id}
             href={`/events/${ev.city}/${ev.id}`}
           >
-            <Image src={ev.image} alt={ev.title} width={250} height={250} />
+            <Image src={ev.image} alt={ev.title} fill={true} />
             <h2>{ev.title}</h2>
             <p>{ev.description}</p>
+            <div className="button">More Info</div>
           </Link>
         ))}
       </div>
